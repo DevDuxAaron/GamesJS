@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  //card optiions
+  //card options
   const cardArray = [
     {
       name: "blue",
