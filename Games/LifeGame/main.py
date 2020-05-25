@@ -4,13 +4,13 @@ import time
 
 pygame.init()
 
-width , height = 600, 600
-screen = pygame.display.set_mode((height,width))
+width , height = 700, 700
+screen = pygame.display.set_mode((width,height))
 
 bg = 25, 25, 25
 screen.fill(bg)
 
-nxC, nyC = 50,50
+nxC, nyC = 140,140
 
 dimCW = width / nxC
 dimCH = height / nyC
