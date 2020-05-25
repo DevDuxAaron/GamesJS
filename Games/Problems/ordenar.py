@@ -16,22 +16,6 @@ def camino(cup,n):
 n,m = map(int,input().split())
 copa = np.zeros([n,n], dtype = int)
 
-for e in range(m):
-    a,b = map(int,input().split())
-    copa[a][b] = 1
-i,j = map(int,input().split())
-if copa[i][j] == 1:
-    res ='SI'
-else:
-    #print('Locura')
-    #print(copa)
-    copa = camino(copa,n)
-    if copa[i][j] == 1:
-        res = 'SI'
-    else:
-        res = 'NO'
-#print("\nMatrix a : \n", copa)
-print(res)
 
 # #la = {5:"Hola",15:"Hola",9:"Hola",8:"Hola",3:"Hola",4:"Hola"}
 # foo = {}
