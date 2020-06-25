@@ -1,4 +1,21 @@
-import Paddle from "./src/paddle";
+//import Paddle from "./src/paddle";
+
+class Paddle{
+    constructor (gameWidth,gameHeight) {
+        this.width = 150;
+        this.height = 30;
+        this.position = {
+            x: gameWidth / 2 - this.width / 2,
+            y: gameHeight - this.height-10
+        }
+    }
+    draw(ctx){
+        console.log('Funciona');
+        ctx.fillStyle = '#0ff'
+        ctx.fillRect(this.position.x,this.position.y,this.width,this.height)
+    }
+}
+
 
 // Obteniendo el canvas
 let canvas = document.getElementById("gameScreen");
@@ -23,3 +40,5 @@ const GAME_HEIGHT = 600
 let paddle = new Paddle(GAME_WIDTH,GAME_HEIGHT);
 
 paddle.draw(ctx)
+
+

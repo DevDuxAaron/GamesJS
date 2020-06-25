@@ -8,10 +8,9 @@ export default class Paddle{
         }
     }
 
-    draw(ct){
+    draw(ctx){
         console.log('Funciona');
-        
-        ct.fillStyle = '#0ff'
-        ct.fillRect(this.position.x,this.position.y,this.width,this.height)
+        ctx.fillStyle = '#0ff'
+        ctx.fillRect(this.position.x,this.position.y,this.width,this.height)
     }
 }
